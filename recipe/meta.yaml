@@ -1,5 +1,5 @@
 {% set name = "jiter" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jiter-{{ version }}.tar.gz
-  sha256: 07a7142c38aacc85194391108dc91b5b57093c978a9932bd86a36862759d9500
+  sha256: 1d9637eaf8c1d6a63d6562f2a6e5ab3af946c66037eb1b894e8fad75422266e4
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
