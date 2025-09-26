@@ -10,6 +10,8 @@ source:
   sha256: 07a7142c38aacc85194391108dc91b5b57093c978a9932bd86a36862759d9500
 
 build:
+  script_env:
+    - PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 1
 
