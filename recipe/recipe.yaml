@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jiter
-  version: "0.18.0"
+  version: "0.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jiter-${{ version }}.tar.gz
-  sha256: a0ca63fd9450a212e4e658d4cfe0ab4977c4f9b0003c68828b843c65e27662ff
+  sha256: ba3064f8be276d7cfb83c2fb85c858be533da2c2f80f9b048c3781b45a57a195
 
 build:
   number: 0
